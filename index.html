@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>♥Untuk Naura Tersayang♥</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fdf2f8;
+            color: #4c0519;
+            overflow-x: hidden;
+        }
+        
+        .handwriting {
+            font-family: 'Pacifico', cursive;
+        }
+        
+        .heart-beat {
+            animation: beat 1.5s infinite;
+        }
+        
+        @keyframes beat {
+            0% { transform: scale(1); }
+            25% { transform: scale(1.1); }
+            40% { transform: scale(1); }
+            60% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        .falling-letters {
+            animation: fall 5s linear infinite;
+            position: absolute;
+            opacity: 0.7;
+        }
+        
+        @keyframes fall {
+            0% { transform: translateY(-100vh) rotate(0deg); }
+            100% { transform: translateY(100vh) rotate(360deg); }
+        }
+        
+        .flip-card {
+            perspective: 1000px;
+        }
+        
+        .flip-card-inner {
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+        
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+        
+        .flip-card-front, .flip-card-back {
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        
+        .flip-card-back {
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center py-12 px-4">
+    <!-- Background elements -->
+    <div id="fallingElements"></div>
+    
+    <div class="w-full max-w-3xl mx-auto relative">
+        <!-- Header -->
+        <header class="text-center mb-8 relative z-10">
+            <h1 class="text-4xl md:text-5xl font-bold mb-2 text-rose-800 handriting">♥Untuk Naura Tersayang♥</h1>
+            <div class="w-20 h-20 mx-auto heart-beat mt-4">
+                <img src="index.png" alt="Ilustrasi hati berwarna merah muda dengan kilauan bintang" class="rounded-full border-4 border-rose-300">
+            </div>
+        </header>
+        
+        <!-- Main Content -->
+        <main class="bg-white rounded-xl shadow-lg p-6 md:p-8 relative z-10">
+            <!-- Card 1: Sorry Message -->
+            <div class="flip-card mb-8">
+                <div class="flip-card-inner bg-gradient-to-br from-rose-100 to-pink-100 rounded-lg overflow-hidden shadow-md">
+                    <div class="flip-card-front p-6 md:p-8 min-h-64 flex flex-col justify-center">
+                        <div class="text-center">
+                            <h2 class="text-2xl md:text-3xl font-semibold mb-4 text-rose-800 handwriting">Maafkan Aku ya Cantikk</h2>
+                            <p class="text-lg text-rose-900 mb-4">Kata-kata mungkin tak cukup untuk mengungkapkan penyesalanku...</p>
+                            <div class="flex justify-center">
+                                <img src="index_lama.png" alt="Ilustrasi seseorang menundukkan kepala meminta maaf dengan wajah sedih" class="rounded-lg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card-back p-6 md:p-8 min-h-64 flex flex-col justify-center bg-gradient-to-br from-pink-100 to-rose-100">
+                        <div class="text-center">
+                            <h3 class="text-xl md:text-2xl font-medium mb-3 text-rose-800 handwriting">Aku Sungguh Menyesal</h3>
+                            <p class="text-rose-900 mb-4">Tak ada maksudku untuk menyakitimu. Aku berjanji akan lebih baik.</p>
+                            <div class="flex justify-center">
+                                <img src="index_lama.png" alt="Ilustrasi tangan menggapai dengan latar bunga-bunga" class="rounded-lg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card 2: Photo Gallery -->
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
+                <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                    <img src="index_baru.png" alt="Foto kenangan bahagia bersama Naura tersenyum di taman bunga" class="w-full h-40 object-cover">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                    <img src="index_old.png" alt="Foto bersama di saat matahari terbenam dengan latar pemandangan indah" class="w-full h-40 object-cover">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                    <img src="index_new.jpg" alt="Foto close up wajah Naura tersenyum dengan latar belakang blur" class="w-full h-40 object-cover">
+                </div>
+            </div>
+            
+            <!-- Card 3: Promise -->
+            <div class="bg-rose-50 rounded-lg p-6 mb-8 border border-rose-200">
+                <h3 class="text-xl font-semibold mb-4 text-rose-800 text-center handwriting">Janjiku Untukmu</h3>
+                <ul class="space-y-3">
+                    <li class="flex items-start">
+                        <span class="text-rose-500 mr-2">♥</span>
+                        <span>Aku akan lebih memahami perasaanmu</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-rose-500 mr-2">♥</span>
+                        <span>Aku akan lebih sabar dan penuh perhatian</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-rose-500 mr-2">♥</span>
+                        <span>Aku akan menjadi tempat paling nyaman bagimu</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-rose-500 mr-2">♥</span>
+                        <span>Aku berjanji akan terus belajar menjadi yang lebih baik</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Card 4: Interactive Message -->
+            <div class="text-center bg-white p-6 rounded-lg shadow-sm border border-pink-100">
+                <p class="mb CareerError: OrganisationName cannot be blank. Please provide an organization name.
